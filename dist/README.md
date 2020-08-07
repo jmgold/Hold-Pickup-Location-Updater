@@ -9,27 +9,35 @@ A second with any holds the script was unable to update
 
 Within the dist folder you will find a deployable for windows executable version of the script created using pyinstaller
 
-#Prerequistes
+Prerequistes
 
 In order to function you must complete the api_info.ini file in the same directory
 and add your cacert.pem file to the certifi folder
 
-#api_info.ini
+api_info.ini
+
 Requires valid credentials for both the Sierra holds API and sql access
 The file should be formatted like so
 
 [api]
+
 base_url = https://[local domain]/iii/sierra-api/v5
+
 client_key = [enter Sierra API key]
+
 client_secret = [enter Sierra API secret]
+
 sql_host = [enter host for Sierra SQL server]
+
 sql_user = [enter sql username]
+
 sql_pass = [enter sql password]
 
-#cacert.pem file
+cacert.pem file
+
 To find where this file is located on your computer you may run the following python script
 
 import certifi
 certifi.where()
 
-Once you've located the file, copy it to the certifi folder
+Once you've located the file, copy it to a certifi folder within the same directory
