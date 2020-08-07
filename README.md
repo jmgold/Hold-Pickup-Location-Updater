@@ -40,4 +40,4 @@ To find where this file is located on your computer you may run the following py
 import certifi
 certifi.where()
 
-Once you've located the file, copy it to the certifi folder
+Once you've located the file, copy it to a certifi folder within the same directory
